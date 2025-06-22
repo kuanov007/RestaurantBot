@@ -188,6 +188,7 @@ public class MyBot extends TelegramLongPollingBot {
                         sendMessage.setChatId(chatId);
                         sendMessage.setText("Contact: +998900000000");
                         executeExecuteMessage(sendMessage);
+                        userStates.put(chatId, State.MAIN_MENU);
                     }
                 }
                 return true;
